@@ -6,7 +6,7 @@ import Rodape from './Rodape.vue';
 
 
 export default {
-    components: { CardDestaque, CardCurso, CardNoticia, Rodape }
+    components: { CardDestaque, CardCurso, CardNoticia }
 }
 
 </script>
@@ -93,7 +93,6 @@ Na Modalidade Programação, os competidores são desafiados com problemas que d
         </div>
 
     </div>
-    <Rodape />
 
 </template>
 
