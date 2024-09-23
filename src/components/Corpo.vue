@@ -2,7 +2,6 @@
 import CardCurso from './CardCurso.vue';
 import CardDestaque from './CardDestaque.vue';
 import CardNoticia from './CardNoticia.vue';
-import Rodape from './Rodape.vue';
 
 
 export default {
