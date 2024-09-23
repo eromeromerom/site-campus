@@ -3,16 +3,20 @@ import { RouterLink } from 'vue-router';
 import CardCurso from './CardCurso.vue';
 import CardDestaque from './CardDestaque.vue';
 import CardNoticia from './CardNoticia.vue';
+import Cabecalho from './Cabecalho.vue';
+import Rodape from './Rodape.vue';
 
 
 
 export default {
-    components: { CardDestaque, CardCurso, CardNoticia, RouterLink }
+    components: { Cabecalho, CardDestaque, CardCurso, CardNoticia, RouterLink, Rodape }
 }
 
 </script>
 
 <template>
+    <Cabecalho />
+
     <div class="sessao-corpo">
         <div class="cabecalho-sessao">
             <h2>
@@ -99,6 +103,7 @@ Na Modalidade Programação, os competidores são desafiados com problemas que d
         </div>
 
     </div>
+    <Rodape />
 
 </template>
 

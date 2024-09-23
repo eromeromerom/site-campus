@@ -1,5 +1,59 @@
 <script lang="ts">
-export default {}
+import DropDown from './DropDown.vue';
+
+export default {
+//     name: 'cabecalho',
+//     components: {
+//         DropDown
+//     },
+//     data() {
+//         return {
+//             institucional: [
+//                 {
+//                     title: 'Calendário universitário',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Conheça o campus',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Gestão do campus',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Ouvidoria',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Concursos e seleções',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Identidade visual',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Eventos',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Notícias',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Fotos',
+//                     link: '#'
+//                 },
+//                 {
+//                     title: 'Fale conosco',
+//                     link: '#'
+//                 }
+//             ]
+//         }
+//     }
+// 
+}
 </script>
 
 <template>
@@ -11,18 +65,30 @@ export default {}
 
     </div>
     <div class="menu">
-        <RouterLink to="/"><div class="item-menu"><p class="text-item-menu"> Início </p></div></RouterLink>
+        <RouterLink to="/">
+            <div class="item-menu">
+                <p class="text-item-menu"> Início </p>
+            </div>
+        </RouterLink>
 
         <!-- <div class="item-menu"><a href="#" class="text-item-menu">Início</a></div> -->
         <!-- <a href="#" class="item-menu">Instituição <span class="material-symbols-outlined"> stat_minus_1
             </span></a> -->
-        <div class="item-menu"><a href="#" class="text-item-menu">Instituição</a></div>
+        
+            <!-- <Dropdown title="Instituição" :items="institucional" /> -->
+            <div class="item-menu"><a href="#" class="text-item-menu">Instituição</a></div>
+
+
         <div class="item-menu"><a href="#" class="text-item-menu">Ensino</a></div>
         <div class="item-menu"><a href="#" class="text-item-menu">Pesquisa e Inovação</a></div>
         <div class="item-menu"><a href="#" class="text-item-menu">Extensão</a></div>
         <div class="item-menu"><a href="#" class="text-item-menu">Pesquisa</a></div>
         <div class="item-menu"><a href="#" class="text-item-menu">Setores</a></div>
-        <div class="item-menu"><a href="#" class="text-item-menu">Sistemas</a></div>
+        <RouterLink to="/adminPainel">
+            <div class="item-menu">
+                <p class="text-item-menu"> Sistemas </p>
+            </div>
+        </RouterLink>
 
     </div>
     <img src="./imagens/banner.png" alt="" class="banner">
@@ -95,7 +161,7 @@ export default {}
 
 }
 
-.text-item-menu:hover{
+.text-item-menu:hover {
     font-weight: 700;
 
 }

@@ -1,15 +1,17 @@
 <script lang="ts">
+import Cabecalho from '../Cabecalho.vue';
 import CardRelacionadas from '../CardRelacionadas.vue';
+import Rodape from '../Rodape.vue';
 
 
 
 export default {
-    components: { CardRelacionadas }
+    components: { Cabecalho, CardRelacionadas, Rodape }
 }
 
 </script>
 <template>
-
+<Cabecalho />
     <div class="main">
         <div class="cabecalho">
             <h2 id="texto-titulo">
@@ -92,7 +94,7 @@ A participação no encontro vale como horas complementares. Não é necessário
 
     </div>
 
-
+    <Rodape />
 </template>
 
 <style scoped>
