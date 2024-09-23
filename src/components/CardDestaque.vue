@@ -25,7 +25,9 @@ export default {
 
                 <!-- <h3 class="titulo-card"><a href="#">Transferência Interna: inscrições para mudança de curso estarão abertas de 19 a 21 de agosto</a></h3> -->
 
-                <h3 class="titulo-card">{{title}}</h3>
+                <RouterLink to="/Noticia"><h3 class="titulo-card">{{title}}</h3></RouterLink>
+
+                
 
                 <p class="corpo-texto-card">
                     {{body}}

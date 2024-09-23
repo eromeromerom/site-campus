@@ -11,7 +11,9 @@ export default {}
 
     </div>
     <div class="menu">
-        <div class="item-menu"><a href="#" class="text-item-menu">Início</a></div>
+        <RouterLink to="/"><div class="item-menu"><p class="text-item-menu"> Início </p></div></RouterLink>
+
+        <!-- <div class="item-menu"><a href="#" class="text-item-menu">Início</a></div> -->
         <!-- <a href="#" class="item-menu">Instituição <span class="material-symbols-outlined"> stat_minus_1
             </span></a> -->
         <div class="item-menu"><a href="#" class="text-item-menu">Instituição</a></div>
@@ -30,7 +32,9 @@ export default {}
 
 <style scoped>
 * {
+    text-decoration: none;
     padding: 0;
+    margin: 0;
 }
 
 .img-logo {

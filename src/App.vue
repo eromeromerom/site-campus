@@ -1,4 +1,5 @@
 <script lang="ts">
+import { RouterView } from 'vue-router';
 import Cabecalho from './components/Cabecalho.vue';
 import Corpo from './components/Corpo.vue';
 import Rodape from './components/Rodape.vue';
@@ -14,9 +15,8 @@ export default {
 
 <template>
   <Cabecalho />
-  <!-- <Corpo /> -->
-  <NoticiaView />
-
+  <!-- <NoticiaView /> -->
+  <RouterView />
   <Rodape />
 
 </template>

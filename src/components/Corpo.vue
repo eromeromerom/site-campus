@@ -1,11 +1,13 @@
 <script lang="ts">
+import { RouterLink } from 'vue-router';
 import CardCurso from './CardCurso.vue';
 import CardDestaque from './CardDestaque.vue';
 import CardNoticia from './CardNoticia.vue';
 
 
+
 export default {
-    components: { CardDestaque, CardCurso, CardNoticia }
+    components: { CardDestaque, CardCurso, CardNoticia, RouterLink }
 }
 
 </script>
@@ -16,9 +18,14 @@ export default {
             <h2>
                 Destaques
             </h2>
-            <a class="ver-mais" href="#">
+
+            <RouterLink to="/abaDestaques" class="ver-mais">
+
                 <div class="button">Ver mais</div>
-            </a>
+
+            </RouterLink>
+
+
 
         </div>
 
@@ -101,6 +108,7 @@ Na Modalidade Programação, os competidores são desafiados com problemas que d
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 
 }
 
@@ -150,10 +158,10 @@ h2 {
     text-decoration: none;
     color: #FFF;
 
-    padding-left: 24px;
+    /* padding-left: 24px;
     padding-right: 24px;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 8px; */
 
 
     font-family: Lato;
