@@ -5,16 +5,18 @@ import CardDestaque from './CardDestaque.vue';
 import CardNoticia from './CardNoticia.vue';
 import Cabecalho from './Cabecalho.vue';
 import Rodape from './Rodape.vue';
+import DropDown from './DropDown.vue';
 
 
 
 export default {
-    components: { Cabecalho, CardDestaque, CardCurso, CardNoticia, RouterLink, Rodape }
+    components: { Cabecalho, CardDestaque, CardCurso, CardNoticia, RouterLink, Rodape, DropDown }
 }
 
 </script>
 
 <template>
+
     <Cabecalho />
 
     <div class="sessao-corpo">

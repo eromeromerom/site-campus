@@ -3,7 +3,7 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 import NoticiaView from '../views/NoticiaView.vue'
 import Corpo from '../Corpo.vue'
 import AbaDestaquesView from '../views/AbaDestaquesView.vue'
-import UserVisualizer from '../views/UserVisualizer.vue'
+// import UserVisualizer from '../views/UserVisualizer.vue'
 import AdminVisualizer from '../views/AdminVisualizer.vue'
 
 const routes = [
